@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        const url = new URL(location.href);
+        if (url.hash !== "#NO_REDIRECT") {
+            location.href = location.href.replace(/^https:\/\/altiri.github.io/i, "https:\/\/alttiri.github.io");
+        }
+    </script>
+    <noscript>
+        <div style="
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        ">[noscript]: Redirect to the main page in 1 second</div>
+        <meta http-equiv="refresh" content="1; URL=https://alttiri.github.io">
+    </noscript>
+</body>
+</html>
